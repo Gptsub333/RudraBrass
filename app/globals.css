@@ -29,7 +29,7 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.5rem;
-  
+
   /* Custom colors for the site */
   --navy: oklch(0.25 0.05 250);
   --gold: oklch(0.75 0.12 85);
@@ -76,6 +76,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -101,8 +102,15 @@
 
 /* Animation for hero slider */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fadeIn {
@@ -111,8 +119,15 @@
 
 /* Counter animation */
 @keyframes countUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-countUp {
@@ -125,6 +140,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -136,6 +152,7 @@
     opacity: 0;
     transform: translateX(-40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -147,6 +164,7 @@
     opacity: 0;
     transform: translateX(40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -158,6 +176,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -170,6 +189,7 @@
     filter: blur(10px);
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     filter: blur(0);
@@ -208,18 +228,31 @@
     opacity: 0;
     transform: translateY(80px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.animate-product-reveal {
-  animation: smoothReveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
 .product-parallax {
   opacity: 0;
   transform: translateY(60px);
   will-change: transform, opacity;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(56px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-product-reveal {
+  animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 }

@@ -90,7 +90,7 @@ export default function Header() {
                     {item.dropdown && <ChevronDown className="w-4 h-4" />}
                   </Link>
                   {item.dropdown && activeDropdown === item.name && (
-                    <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 min-w-[220px] border-t-2 border-[#c9a227] z-[100]">
+                    <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 min-w-[220px] border-t-2 border-[#c9a227]">
                       {item.dropdown.map((subItem) => (
                         <Link
                           key={subItem.name}

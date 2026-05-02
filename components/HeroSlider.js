@@ -74,7 +74,7 @@ export default function HeroSlider() {
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }} />
         </div>
-        
+
         {/* Brass gear decorative elements */}
         <div className="absolute -right-20 top-1/4 w-80 h-80 border-8 border-[#c9a227]/20 rounded-full animate-spin" style={{ animationDuration: '30s' }} />
         <div className="absolute -left-40 bottom-0 w-96 h-96 border-8 border-[#c9a227]/10 rounded-full" />
@@ -144,9 +144,8 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-[#c9a227] w-8' : 'bg-white/50 hover:bg-white'
-            }`}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#c9a227] w-8' : 'bg-white/50 hover:bg-white'
+              }`}
           />
         ))}
       </div>
