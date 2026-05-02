@@ -51,9 +51,9 @@ export default function AboutUs() {
 
   return (
     <section id="about" ref={sectionRef} className="py-20 relative overflow-hidden">
-      {/* Background Video Placeholder */}
-      <div className="absolute inset-0 bg-[#1e3a5f]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/95 to-[#1e3a5f]/80" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-[#1a3a2a]">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a3a2a]/95 to-[#1a3a2a]/80" />
         {/* Pattern Overlay */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
@@ -64,11 +64,11 @@ export default function AboutUs() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`${isVisible ? 'animate-fadeIn' : 'opacity-0'}`}>
-            <p className="text-[#c9a227] font-semibold text-lg mb-2">Know About Us</p>
+            <p className="text-[#4a7c59] font-semibold text-lg mb-2">Know About Us</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Who We Are
             </h2>
-            <div className="w-24 h-1 bg-[#c9a227] mb-6" />
+            <div className="w-24 h-1 bg-[#4a7c59] mb-6" />
             
             <p className="text-gray-300 mb-6 leading-relaxed">
               Rudra Brass Industries is a prominent manufacturer specializing in high-quality cable glands 
@@ -89,7 +89,7 @@ export default function AboutUs() {
                   key={index}
                   className="flex items-start gap-3 p-4 bg-white/5 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors"
                 >
-                  <div className="w-10 h-10 bg-[#c9a227] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export default function AboutUs() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 bg-[#c9a227] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#4a7c59] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
             >
               Read More
               <ChevronRight className="w-5 h-5" />
@@ -124,13 +124,13 @@ export default function AboutUs() {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-[#c9a227] text-white p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-[#4a7c59] text-white p-6 rounded-lg shadow-xl">
                 <p className="text-4xl font-bold">33+</p>
                 <p className="text-sm font-medium">Years of Excellence</p>
               </div>
               
               {/* Decorative Element */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-4 border-[#c9a227] rounded-lg opacity-50" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 border-4 border-[#4a7c59] rounded-lg opacity-50" />
             </div>
           </div>
         </div>

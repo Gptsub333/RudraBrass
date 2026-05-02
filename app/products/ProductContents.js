@@ -85,16 +85,16 @@ export default function ProductsContent() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[#1e3a5f]/80" />
+        <div className="absolute inset-0 bg-[#1a3a2a]/80" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <p className="text-[#c9a227] font-semibold text-sm uppercase tracking-widest mb-2">
+          <p className="text-[#4a7c59] font-semibold text-sm uppercase tracking-widest mb-2">
             Rudra Brass Industries
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Products</h1>
           <div className="flex items-center gap-2 text-white/70 text-sm">
-            <Link href="/" className="hover:text-[#c9a227] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#4a7c59] transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#c9a227]">Products</span>
+            <span className="text-[#4a7c59]">Products</span>
           </div>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function ProductsContent() {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 bg-white text-[#1e3a5f] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c9a227] focus:border-transparent"
+                className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 bg-white text-[#1a3a2a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent"
               />
               {searchQuery && (
                 <button
@@ -133,7 +133,7 @@ export default function ProductsContent() {
             {/* Sidebar Categories */}
             <aside className="lg:w-64 shrink-0">
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden sticky top-24">
-                <div className="bg-[#1e3a5f] px-5 py-4">
+                <div className="bg-[#1a3a2a] px-5 py-4">
                   <h2 className="text-white font-bold text-lg">Categories</h2>
                 </div>
                 <nav className="py-2">
@@ -150,13 +150,13 @@ export default function ProductsContent() {
                         }}
                         className={`w-full flex items-center justify-between px-5 py-3 text-sm font-medium transition-colors text-left ${
                           activeCategory === cat.name
-                            ? 'bg-[#c9a227]/10 text-[#c9a227] border-l-4 border-[#c9a227]'
-                            : 'text-[#1e3a5f] hover:bg-gray-50 border-l-4 border-transparent'
+                            ? 'bg-[#4a7c59]/10 text-[#4a7c59] border-l-4 border-[#4a7c59]'
+                            : 'text-[#1a3a2a] hover:bg-gray-50 border-l-4 border-transparent'
                         }`}
                       >
                         <span>{cat.name}</span>
                         <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
-                          activeCategory === cat.name ? 'bg-[#c9a227] text-white' : 'bg-gray-100 text-gray-500'
+                          activeCategory === cat.name ? 'bg-[#4a7c59] text-white' : 'bg-gray-100 text-gray-500'
                         }`}>
                           {count}
                         </span>
@@ -166,12 +166,12 @@ export default function ProductsContent() {
                 </nav>
 
                 {/* Quick Contact */}
-                <div className="m-4 bg-[#1e3a5f] rounded-lg p-4 text-white text-center">
+                <div className="m-4 bg-[#1a3a2a] rounded-lg p-4 text-white text-center">
                   <p className="text-xs text-white/70 mb-1">Need help choosing?</p>
                   <p className="font-bold text-sm mb-3">Talk to our experts</p>
                   <a
                     href="tel:+919173684333"
-                    className="flex items-center justify-center gap-2 bg-[#c9a227] text-white text-sm px-4 py-2 rounded font-semibold hover:bg-[#a68521] transition-colors"
+                    className="flex items-center justify-center gap-2 bg-[#4a7c59] text-white text-sm px-4 py-2 rounded font-semibold hover:bg-[#3a6647] transition-colors"
                   >
                     <Phone className="w-4 h-4" />
                     Call Now
@@ -184,8 +184,8 @@ export default function ProductsContent() {
             <section className="flex-1">
               {/* Category Title */}
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-[#1e3a5f]">{activeCategory}</h2>
-                <div className="w-12 h-1 bg-[#c9a227] mt-2" />
+                <h2 className="text-2xl font-bold text-[#1a3a2a]">{activeCategory}</h2>
+                <div className="w-12 h-1 bg-[#4a7c59] mt-2" />
               </div>
 
               {filtered.length === 0 ? (
@@ -193,7 +193,7 @@ export default function ProductsContent() {
                   <p className="text-gray-400 text-lg">No products found for &quot;{searchQuery}&quot;</p>
                   <button
                     onClick={() => { setSearchQuery(''); setActiveCategory('All') }}
-                    className="mt-4 text-[#c9a227] underline text-sm"
+                    className="mt-4 text-[#4a7c59] underline text-sm"
                   >
                     Clear filters
                   </button>
@@ -225,15 +225,15 @@ export default function ProductsContent() {
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <span className="absolute top-3 left-3 bg-[#1e3a5f]/90 text-white text-xs px-2 py-1 rounded font-medium">
+                        <span className="absolute top-3 left-3 bg-[#1a3a2a]/90 text-white text-xs px-2 py-1 rounded font-medium">
                           {product.category.split(' ')[0]}
                         </span>
                       </div>
                       <div className="p-4">
-                        <h3 className="text-sm font-semibold text-[#1e3a5f] mb-3 line-clamp-2 group-hover:text-[#c9a227] transition-colors leading-relaxed">
+                        <h3 className="text-sm font-semibold text-[#1a3a2a] mb-3 line-clamp-2 group-hover:text-[#4a7c59] transition-colors leading-relaxed">
                           {product.name}
                         </h3>
-                        <button className="inline-flex items-center text-xs text-[#c9a227] font-semibold hover:text-[#1e3a5f] transition-colors">
+                        <button className="inline-flex items-center text-xs text-[#4a7c59] font-semibold hover:text-[#1a3a2a] transition-colors">
                           View Details
                           <ChevronRight className="w-3 h-3 ml-1" />
                         </button>
@@ -268,25 +268,25 @@ export default function ProductsContent() {
                 onClick={() => setSelectedProduct(null)}
                 className="absolute top-3 right-3 bg-white/90 hover:bg-white rounded-full p-1.5 shadow transition-colors"
               >
-                <X className="w-5 h-5 text-[#1e3a5f]" />
+                <X className="w-5 h-5 text-[#1a3a2a]" />
               </button>
             </div>
             <div className="p-6">
-              <span className="text-xs font-semibold text-[#c9a227] uppercase tracking-wider">
+              <span className="text-xs font-semibold text-[#4a7c59] uppercase tracking-wider">
                 {selectedProduct.category}
               </span>
-              <h3 className="text-xl font-bold text-[#1e3a5f] mt-1 mb-3">{selectedProduct.name}</h3>
+              <h3 className="text-xl font-bold text-[#1a3a2a] mt-1 mb-3">{selectedProduct.name}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">{selectedProduct.description}</p>
               <div className="flex gap-3">
                 <Link
                   href="/#contact"
-                  className="flex-1 bg-[#1e3a5f] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#c9a227] transition-colors"
+                  className="flex-1 bg-[#1a3a2a] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#4a7c59] transition-colors"
                 >
                   Get a Quote
                 </Link>
                 <a
                   href="tel:+919173684333"
-                  className="flex-1 border-2 border-[#1e3a5f] text-[#1e3a5f] text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#1e3a5f] hover:text-white transition-colors"
+                  className="flex-1 border-2 border-[#1a3a2a] text-[#1a3a2a] text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#1a3a2a] hover:text-white transition-colors"
                 >
                   Call Now
                 </a>

@@ -27,19 +27,19 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e3a5f] text-white">
+    <footer className="bg-[#1a3a2a] text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#c9a227] rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#4a7c59] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
               <div>
                 <h3 className="text-lg font-bold leading-tight">RUDRA</h3>
-                <p className="text-xs text-[#c9a227] font-medium">BRASS INDUSTRIES</p>
+                <p className="text-xs text-gray-300 font-medium">BRASS INDUSTRIES</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -52,7 +52,7 @@ export default function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-white/10 hover:bg-[#c9a227] rounded-lg flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-white/10 hover:bg-[#4a7c59] rounded-lg flex items-center justify-center transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -64,14 +64,14 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Quick Links
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#c9a227] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
                     href={link.href}
-                    className="flex items-center gap-2 text-gray-300 hover:text-[#c9a227] transition-colors"
+                    className="flex items-center gap-2 text-gray-300 hover:text-gray-100 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />
                     {link.name}
@@ -85,14 +85,14 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Our Products
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#c9a227] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
             </h4>
             <ul className="space-y-3">
               {products.map((product, index) => (
                 <li key={index}>
                   <Link 
                     href={product.href}
-                    className="flex items-center gap-2 text-gray-300 hover:text-[#c9a227] transition-colors"
+                    className="flex items-center gap-2 text-gray-300 hover:text-gray-100 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />
                     {product.name}
@@ -106,29 +106,29 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Contact Us
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#c9a227] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#c9a227] flex-shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
                 <span className="text-gray-300">Jamnagar, Gujarat, India</span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-[#c9a227] flex-shrink-0 mt-1" />
+                <Phone className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
                 <div className="text-gray-300">
-                  <a href="tel:+919173684333" className="block hover:text-[#c9a227] transition-colors">
+                  <a href="tel:+919173684333" className="block hover:text-gray-100 transition-colors">
                     +91-91736 84333454
                   </a>
-                  <a href="tel:+919998707757" className="block hover:text-[#c9a227] transition-colors">
+                  <a href="tel:+919998707757" className="block hover:text-gray-100 transition-colors">
                     +91-99987 077574455
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-[#c9a227] flex-shrink-0 mt-1" />
+                <Mail className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
                 <a 
                   href="mailto:info@rudrabrassindustries.com" 
-                  className="text-gray-300 hover:text-[#c9a227] transition-colors break-all"
+                  className="text-gray-300 hover:text-gray-100 transition-colors break-all"
                 >
                   info@rudrabrassindustries.com
                 </a>
@@ -146,10 +146,10 @@ export default function Footer() {
               © {new Date().getFullYear()} Rudra Brass Industries. All Rights Reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-[#c9a227] transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-gray-200 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-[#c9a227] transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-gray-200 transition-colors">
                 Terms of Service
               </Link>
             </div>

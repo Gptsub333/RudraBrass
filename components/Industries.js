@@ -60,11 +60,11 @@ export default function Industries() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#c9a227] font-semibold text-lg mb-2">Where Our Products Are Used</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Where Our Products Are Used</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             Industries We Serve
           </h2>
-          <div className="w-24 h-1 bg-[#c9a227] mx-auto" />
+          <div className="w-24 h-1 bg-[#4a7c59] mx-auto" />
         </div>
 
         {/* Industries Grid */}
@@ -72,12 +72,12 @@ export default function Industries() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group bg-[#f8f9fa] hover:bg-[#1e3a5f] rounded-xl p-6 text-center transition-all duration-300 cursor-pointer hover:shadow-lg hover:-translate-y-1"
+              className="group bg-[#f8f9fa] hover:bg-[#1a3a2a] rounded-xl p-6 text-center transition-all duration-300 cursor-pointer hover:shadow-lg hover:-translate-y-1"
             >
-              <div className="w-14 h-14 bg-[#1e3a5f] group-hover:bg-[#c9a227] rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300">
+              <div className="w-14 h-14 bg-[#1a3a2a] group-hover:bg-[#4a7c59] rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300">
                 <industry.icon className="w-7 h-7 text-white" />
               </div>
-              <h4 className="text-sm font-semibold text-[#1e3a5f] group-hover:text-white transition-colors">
+              <h4 className="text-sm font-semibold text-[#1a3a2a] group-hover:text-white transition-colors">
                 {industry.name}
               </h4>
             </div>

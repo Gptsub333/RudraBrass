@@ -50,30 +50,30 @@ export default function Manufacturing() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#c9a227] font-semibold text-lg mb-2">Technology Behind Our Production</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Technology Behind Our Production</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             Manufacturing Process
           </h2>
-          <div className="w-24 h-1 bg-[#c9a227] mx-auto" />
+          <div className="w-24 h-1 bg-[#4a7c59] mx-auto" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Process Image */}
           <div className="relative">
-            <div className="aspect-video bg-gradient-to-br from-[#1e3a5f] to-[#2d4a6f] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="aspect-video bg-gradient-to-br from-[#1a3a2a] to-[#243d30] rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* Animated Manufacturing Visual */}
                 <div className="relative">
-                  <div className="w-40 h-40 bg-gradient-to-br from-[#c9a227] to-[#a68521] rounded-full flex items-center justify-center">
+                  <div className="w-40 h-40 bg-[#4a7c59] rounded-full flex items-center justify-center">
                     {(() => {
                       const IconComponent = processes[activeProcess].icon
                       return <IconComponent className="w-20 h-20 text-white" />
                     })()}
                   </div>
                   {/* Animated rings */}
-                  <div className="absolute inset-0 border-4 border-[#c9a227]/30 rounded-full animate-ping" style={{ animationDuration: '2s' }} />
-                  <div className="absolute -inset-8 border-2 border-[#c9a227]/20 rounded-full animate-spin" style={{ animationDuration: '10s' }} />
-                  <div className="absolute -inset-16 border border-[#c9a227]/10 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
+                  <div className="absolute inset-0 border-4 border-[#4a7c59]/30 rounded-full animate-ping" style={{ animationDuration: '2s' }} />
+                  <div className="absolute -inset-8 border-2 border-[#4a7c59]/20 rounded-full animate-spin" style={{ animationDuration: '10s' }} />
+                  <div className="absolute -inset-16 border border-[#4a7c59]/10 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
                 </div>
               </div>
               
@@ -93,15 +93,15 @@ export default function Manufacturing() {
                 onClick={() => setActiveProcess(index)}
                 className={`p-6 rounded-xl text-left transition-all duration-300 ${
                   activeProcess === index
-                    ? 'bg-[#1e3a5f] text-white shadow-lg scale-105'
-                    : 'bg-white hover:bg-[#1e3a5f] hover:text-white shadow-md hover:shadow-lg'
+                    ? 'bg-[#1a3a2a] text-white shadow-lg scale-105'
+                    : 'bg-white hover:bg-[#1a3a2a] hover:text-white shadow-md hover:shadow-lg'
                 }`}
               >
                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                  activeProcess === index ? 'bg-[#c9a227]' : 'bg-[#f8f9fa]'
+                  activeProcess === index ? 'bg-[#4a7c59]' : 'bg-[#f8f9fa]'
                 }`}>
                   <process.icon className={`w-6 h-6 ${
-                    activeProcess === index ? 'text-white' : 'text-[#1e3a5f]'
+                    activeProcess === index ? 'text-white' : 'text-[#1a3a2a]'
                   }`} />
                 </div>
                 <h4 className="font-semibold text-lg mb-2">{process.name}</h4>

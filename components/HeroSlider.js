@@ -9,31 +9,31 @@ const slides = [
     title: 'Welcome to Rudra Brass Industries',
     subtitle: '',
     description: 'Across our two manufacturing units, we craft a diverse range of over 2000 different unique & innovative product variations.',
-    bgColor: 'from-[#1e3a5f] to-[#2d4a6f]',
+    bgColor: 'from-[#1a3a2a] to-[#243d30]',
   },
   {
     title: 'Brass Cable Gland',
     subtitle: '',
     description: 'A leading manufacturer and exporter of high precision and excellent quality brass cable glands, cable gland accessories and cable gland kits.',
-    bgColor: 'from-[#2d4a6f] to-[#1e3a5f]',
+    bgColor: 'from-[#243d30] to-[#1a3a2a]',
   },
   {
     title: 'Cable Glands Accessories',
     subtitle: '',
     description: 'A leading manufacturer and exporter of high precision and excellent quality brass cable glands, cable gland accessories and cable gland kits.',
-    bgColor: 'from-[#1e3a5f] to-[#3d5a7f]',
+    bgColor: 'from-[#1a3a2a] to-[#2e4d3a]',
   },
   {
     title: 'Brass Earthing Parts',
     subtitle: '',
     description: 'A leading manufacturer and exporter of high precision and excellent quality brass earthing rod, terminal, connectors, clamp, clips.',
-    bgColor: 'from-[#3d5a7f] to-[#1e3a5f]',
+    bgColor: 'from-[#2e4d3a] to-[#1a3a2a]',
   },
   {
     title: 'Cable Lugs and Connectors',
     subtitle: '',
     description: 'High quality cable lugs and connectors for industrial applications.',
-    bgColor: 'from-[#1e3a5f] to-[#2d4a6f]',
+    bgColor: 'from-[#1a3a2a] to-[#243d30]',
   },
 ]
 
@@ -75,9 +75,9 @@ export default function HeroSlider() {
           }} />
         </div>
 
-        {/* Brass gear decorative elements */}
-        <div className="absolute -right-20 top-1/4 w-80 h-80 border-8 border-[#c9a227]/20 rounded-full animate-spin" style={{ animationDuration: '30s' }} />
-        <div className="absolute -left-40 bottom-0 w-96 h-96 border-8 border-[#c9a227]/10 rounded-full" />
+        {/* Decorative elements */}
+        <div className="absolute -right-20 top-1/4 w-80 h-80 border-8 border-[#4a7c59]/20 rounded-full animate-spin" style={{ animationDuration: '30s' }} />
+        <div className="absolute -left-40 bottom-0 w-96 h-96 border-8 border-[#4a7c59]/10 rounded-full" />
       </div>
 
       {/* Slide Content */}
@@ -97,25 +97,25 @@ export default function HeroSlider() {
           <div className="flex flex-wrap gap-4 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <Link
               href="#contact"
-              className="bg-[#c9a227] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300 inline-flex items-center gap-2"
+              className="bg-[#4a7c59] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300 inline-flex items-center gap-2"
             >
               Request A Quote
               <ChevronRight className="w-5 h-5" />
             </Link>
             <Link
               href="#products"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
             >
               View Products
             </Link>
           </div>
         </div>
 
-        {/* Brass product image placeholder */}
+        {/* Decorative badge */}
         <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2">
-          <div className="w-80 h-80 bg-gradient-to-br from-[#c9a227] to-[#a68521] rounded-full flex items-center justify-center shadow-2xl">
-            <div className="w-60 h-60 bg-gradient-to-br from-[#d4af37] to-[#c9a227] rounded-full flex items-center justify-center border-4 border-[#e5c645]/50">
-              <div className="text-center text-[#1e3a5f]">
+          <div className="w-80 h-80 bg-[#4a7c59] rounded-full flex items-center justify-center shadow-2xl">
+            <div className="w-60 h-60 bg-[#3a6647] rounded-full flex items-center justify-center border-4 border-[#5a8c69]/50">
+              <div className="text-center text-white">
                 <p className="text-5xl font-bold">33+</p>
                 <p className="text-sm font-semibold">Years of Excellence</p>
               </div>
@@ -127,13 +127,13 @@ export default function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#c9a227] rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#4a7c59] rounded-full flex items-center justify-center text-white transition-all duration-300"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#c9a227] rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#4a7c59] rounded-full flex items-center justify-center text-white transition-all duration-300"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
@@ -144,7 +144,7 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#c9a227] w-8' : 'bg-white/50 hover:bg-white'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#4a7c59] w-8' : 'bg-white/50 hover:bg-white'
               }`}
           />
         ))}

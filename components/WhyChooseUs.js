@@ -91,11 +91,11 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#c9a227] font-semibold text-lg mb-2">Why Choose Us</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Why Choose Us</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             {"Why We're Your Best Choice"}
           </h2>
-          <div className="w-24 h-1 bg-[#c9a227] mx-auto mb-6" />
+          <div className="w-24 h-1 bg-[#4a7c59] mx-auto mb-6" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -118,13 +118,13 @@ export default function WhyChooseUs() {
               {benefits.map((benefit, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-3 p-4 bg-[#f8f9fa] rounded-lg hover:bg-[#1e3a5f] hover:text-white group transition-all duration-300"
+                  className="flex items-start gap-3 p-4 bg-[#f8f9fa] rounded-lg hover:bg-[#1a3a2a] hover:text-white group transition-all duration-300"
                 >
-                  <div className="w-10 h-10 bg-[#c9a227] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
                     <benefit.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1 text-[#1e3a5f] group-hover:text-white transition-colors">{benefit.title}</h4>
+                    <h4 className="font-semibold mb-1 text-[#1a3a2a] group-hover:text-white transition-colors">{benefit.title}</h4>
                     <p className="text-sm text-gray-500 group-hover:text-gray-300 transition-colors">{benefit.description}</p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
 
             <Link
               href="/why-choose-us"
-              className="inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-8 py-4 rounded font-semibold hover:bg-[#c9a227] transition-colors mt-8"
+              className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-8 py-4 rounded font-semibold hover:bg-[#4a7c59] transition-colors mt-8"
             >
               Read More
               <ChevronRight className="w-5 h-5" />
@@ -152,16 +152,16 @@ export default function WhyChooseUs() {
               />
             </div>
             {/* Decorative Element */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-8 border-[#c9a227] rounded-lg -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-8 border-[#4a7c59] rounded-lg -z-10" />
           </div>
         </div>
 
         {/* Stats Section */}
-        <div className="bg-[#1e3a5f] rounded-2xl p-8 md:p-12">
+        <div className="bg-[#1a3a2a] rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-[#c9a227] mb-2">
+                <p className="text-4xl md:text-5xl font-bold text-[#4a7c59] mb-2">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="text-white font-medium">{stat.label}</p>
