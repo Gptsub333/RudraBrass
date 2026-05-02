@@ -31,8 +31,8 @@ function useScrollAnimation() {
         })
       },
       {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.05,
+        rootMargin: '0px 0px -100px 0px',
       }
     )
 
@@ -214,7 +214,7 @@ export default function ProductsContent() {
                           : 'opacity-0'
                       }`}
                       style={{
-                        animationDelay: `${(index % 4) * 80}ms`,
+                        animationDelay: `${(index % 4) * 120}ms`,
                       }}
                       onClick={() => setSelectedProduct(product)}
                     >

@@ -27,7 +27,7 @@ function useScrollAnimation() {
       },
       {
         threshold: 0.15,
-        rootMargin: '0px 0px -80px 0px',
+        rootMargin: '0px 0px -100px 0px',
       }
     )
 
@@ -87,7 +87,7 @@ export default function Products() {
                     : 'opacity-0'
                 }`}
                 style={{
-                  animationDelay: `${index * 100}ms`,
+                  animationDelay: `${index * 120}ms`,
                 }}
               >
                 <div className="relative aspect-square overflow-hidden bg-gray-50">
