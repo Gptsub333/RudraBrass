@@ -211,12 +211,10 @@ export default function ProductsContent() {
                       className={`bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer ${
                         visibleItems.has(String(index))
                           ? 'animate-product-reveal'
-                          : 'opacity-0 translate-y-8'
+                          : 'opacity-0'
                       }`}
                       style={{
-                        animationDelay: visibleItems.has(String(index))
-                          ? `${(index % 4) * 100}ms`
-                          : '0ms',
+                        animationDelay: `${(index % 4) * 80}ms`,
                       }}
                       onClick={() => setSelectedProduct(product)}
                     >

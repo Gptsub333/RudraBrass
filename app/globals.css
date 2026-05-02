@@ -202,18 +202,23 @@
   opacity: 0;
 }
 
-/* Product card specific animation */
+/* Product card specific animation - smooth fade with subtle rise */
 @keyframes productReveal {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(30px) scale(0.95);
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
 .animate-product-reveal {
-  animation: productReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: productReveal 0.8s ease-out forwards;
+}
+
+/* Pre-animation state - just invisible, no transform */
+.product-hidden {
+  opacity: 0;
 }
