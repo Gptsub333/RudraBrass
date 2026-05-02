@@ -156,7 +156,7 @@ export default function ProductsContent() {
                       >
                         <span>{cat.name}</span>
                         <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
-                          activeCategory === cat.name ? 'bg-[#EDE8D0] text-white' : 'bg-gray-100 text-gray-500'
+                          activeCategory === cat.name ? 'bg-[#EDE8D0] text-gray-700' : 'bg-gray-100 text-gray-500'
                         }`}>
                           {count}
                         </span>
@@ -171,7 +171,7 @@ export default function ProductsContent() {
                   <p className="font-bold text-sm mb-3">Talk to our experts</p>
                   <a
                     href="tel:+919173684333"
-                    className="flex items-center justify-center gap-2 bg-[#EDE8D0] text-white text-sm px-4 py-2 rounded font-semibold hover:bg-[#3a6647] transition-colors"
+                    className="flex items-center justify-center gap-2 bg-[#EDE8D0] text-gray-700 text-sm px-4 py-2 rounded font-semibold hover:bg-white transition-colors"
                   >
                     <Phone className="w-4 h-4" />
                     Call Now
@@ -280,7 +280,7 @@ export default function ProductsContent() {
               <div className="flex gap-3">
                 <Link
                   href="/#contact"
-                  className="flex-1 bg-[#1a3a2a] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#EDE8D0] transition-colors"
+                  className="flex-1 bg-[#1a3a2a] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#EDE8D0] hover:text-gray-700 transition-colors"
                 >
                   Get a Quote
                 </Link>

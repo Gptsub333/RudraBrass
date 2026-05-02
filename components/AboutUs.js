@@ -102,7 +102,7 @@ export default function AboutUs() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 bg-[#EDE8D0] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#EDE8D0] text-gray-700 px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
             >
               Read More
               <ChevronRight className="w-5 h-5" />
@@ -124,7 +124,7 @@ export default function AboutUs() {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-[#EDE8D0] text-white p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-[#EDE8D0] text-gray-700 p-6 rounded-lg shadow-xl">
                 <p className="text-4xl font-bold">33+</p>
                 <p className="text-sm font-medium">Years of Excellence</p>
               </div>

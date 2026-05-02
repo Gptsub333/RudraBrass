@@ -97,7 +97,7 @@ export default function HeroSlider() {
           <div className="flex flex-wrap gap-4 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <Link
               href="#contact"
-              className="bg-[#EDE8D0] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300 inline-flex items-center gap-2"
+              className="bg-[#EDE8D0] text-gray-700 px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300 inline-flex items-center gap-2"
             >
               Request A Quote
               <ChevronRight className="w-5 h-5" />
@@ -114,7 +114,7 @@ export default function HeroSlider() {
         {/* Decorative badge */}
         <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2">
           <div className="w-80 h-80 bg-[#EDE8D0] rounded-full flex items-center justify-center shadow-2xl">
-            <div className="w-60 h-60 bg-[#3a6647] rounded-full flex items-center justify-center border-4 border-[#5a8c69]/50">
+            <div className="w-60 h-60 bg-gray-700 rounded-full flex items-center justify-center border-4 border-gray-500/50">
               <div className="text-center text-white">
                 <p className="text-5xl font-bold">33+</p>
                 <p className="text-sm font-semibold">Years of Excellence</p>

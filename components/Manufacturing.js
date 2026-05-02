@@ -67,7 +67,7 @@ export default function Manufacturing() {
                   <div className="w-40 h-40 bg-[#EDE8D0] rounded-full flex items-center justify-center">
                     {(() => {
                       const IconComponent = processes[activeProcess].icon
-                      return <IconComponent className="w-20 h-20 text-white" />
+                      return <IconComponent className="w-20 h-20 text-gray-700" />
                     })()}
                   </div>
                   {/* Animated rings */}
@@ -101,7 +101,7 @@ export default function Manufacturing() {
                   activeProcess === index ? 'bg-[#EDE8D0]' : 'bg-[#f8f9fa]'
                 }`}>
                   <process.icon className={`w-6 h-6 ${
-                    activeProcess === index ? 'text-white' : 'text-[#1a3a2a]'
+                    activeProcess === index ? 'text-gray-700' : 'text-[#1a3a2a]'
                   }`} />
                 </div>
                 <h4 className="font-semibold text-lg mb-2">{process.name}</h4>

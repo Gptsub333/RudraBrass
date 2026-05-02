@@ -35,7 +35,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-[#EDE8D0] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
+                <span className="text-gray-700 font-bold text-xl">R</span>
               </div>
               <div>
                 <h3 className="text-lg font-bold leading-tight">RUDRA</h3>
