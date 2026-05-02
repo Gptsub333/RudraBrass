@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
@@ -11,11 +11,52 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import ScrollToTop from '@/components/ScrollToTop'
 
+// Custom hook for scroll animation
+function useScrollAnimation() {
+  const containerRef = useRef(null)
+  const [visibleItems, setVisibleItems] = useState(new Set())
+
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = entry.target.dataset.index
+            setVisibleItems((prev) => new Set([...prev, index]))
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    )
+
+    // Small delay to ensure DOM is ready
+    const timeoutId = setTimeout(() => {
+      const items = container.querySelectorAll('[data-animate-item]')
+      items.forEach((item) => observer.observe(item))
+    }, 100)
+
+    return () => {
+      clearTimeout(timeoutId)
+      observer.disconnect()
+    }
+  }, [])
+
+  return { containerRef, visibleItems }
+}
+
 export default function ProductsContent() {
   const searchParams = useSearchParams()
   const [activeCategory, setActiveCategory] = useState('All')
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedProduct, setSelectedProduct] = useState(null)
+  const { containerRef, visibleItems } = useScrollAnimation()
 
   useEffect(() => {
     const categorySlug = searchParams.get('category')
@@ -158,11 +199,25 @@ export default function ProductsContent() {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                  {filtered.map((product) => (
+                <div 
+                  ref={containerRef}
+                  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
+                >
+                  {filtered.map((product, index) => (
                     <div
                       key={product.id}
-                      className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                      data-animate-item
+                      data-index={index}
+                      className={`bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer ${
+                        visibleItems.has(String(index))
+                          ? 'animate-product-reveal'
+                          : 'opacity-0 translate-y-8'
+                      }`}
+                      style={{
+                        animationDelay: visibleItems.has(String(index))
+                          ? `${(index % 4) * 100}ms`
+                          : '0ms',
+                      }}
                       onClick={() => setSelectedProduct(product)}
                     >
                       <div className="relative aspect-square overflow-hidden bg-gray-50">
