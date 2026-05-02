@@ -29,11 +29,11 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Get In Touch</p>
+          <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Get In Touch</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             Contact Us
           </h2>
-          <div className="w-24 h-1 bg-[#4a7c59] mx-auto" />
+          <div className="w-24 h-1 bg-[#EDE8D0] mx-auto" />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -47,7 +47,7 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -89,7 +89,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -120,7 +120,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent transition-all outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent transition-all outline-none"
                       placeholder="John Doe"
                     />
                   </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent transition-all outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent transition-all outline-none"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent transition-all outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent transition-all outline-none"
                       placeholder="+91 98765 43210"
                     />
                   </div>
@@ -167,7 +167,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent transition-all outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent transition-all outline-none"
                       placeholder="Product Inquiry"
                     />
                   </div>
@@ -184,14 +184,14 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent transition-all outline-none resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent transition-all outline-none resize-none"
                     placeholder="Tell us about your requirements..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#4a7c59] transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#EDE8D0] transition-colors"
                 >
                   <Send className="w-5 h-5" />
                   Send Message

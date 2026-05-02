@@ -34,7 +34,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#4a7c59] rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#EDE8D0] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
               <div>
@@ -52,7 +52,7 @@ export default function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-white/10 hover:bg-[#4a7c59] rounded-lg flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-white/10 hover:bg-[#EDE8D0] rounded-lg flex items-center justify-center transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Quick Links
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#EDE8D0] -mb-2" />
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
@@ -85,7 +85,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Our Products
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#EDE8D0] -mb-2" />
             </h4>
             <ul className="space-y-3">
               {products.map((product, index) => (
@@ -106,15 +106,15 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 relative">
               Contact Us
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4a7c59] -mb-2" />
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#EDE8D0] -mb-2" />
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-[#EDE8D0] flex-shrink-0 mt-1" />
                 <span className="text-gray-300">Jamnagar, Gujarat, India</span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
+                <Phone className="w-5 h-5 text-[#EDE8D0] flex-shrink-0 mt-1" />
                 <div className="text-gray-300">
                   <a href="tel:+919173684333" className="block hover:text-gray-100 transition-colors">
                     +91-91736 84333454
@@ -125,7 +125,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-[#4a7c59] flex-shrink-0 mt-1" />
+                <Mail className="w-5 h-5 text-[#EDE8D0] flex-shrink-0 mt-1" />
                 <a 
                   href="mailto:info@rudrabrassindustries.com" 
                   className="text-gray-300 hover:text-gray-100 transition-colors break-all"

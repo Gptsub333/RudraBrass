@@ -76,8 +76,8 @@ export default function HeroSlider() {
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute -right-20 top-1/4 w-80 h-80 border-8 border-[#4a7c59]/20 rounded-full animate-spin" style={{ animationDuration: '30s' }} />
-        <div className="absolute -left-40 bottom-0 w-96 h-96 border-8 border-[#4a7c59]/10 rounded-full" />
+        <div className="absolute -right-20 top-1/4 w-80 h-80 border-8 border-[#EDE8D0]/20 rounded-full animate-spin" style={{ animationDuration: '30s' }} />
+        <div className="absolute -left-40 bottom-0 w-96 h-96 border-8 border-[#EDE8D0]/10 rounded-full" />
       </div>
 
       {/* Slide Content */}
@@ -97,7 +97,7 @@ export default function HeroSlider() {
           <div className="flex flex-wrap gap-4 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <Link
               href="#contact"
-              className="bg-[#4a7c59] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300 inline-flex items-center gap-2"
+              className="bg-[#EDE8D0] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300 inline-flex items-center gap-2"
             >
               Request A Quote
               <ChevronRight className="w-5 h-5" />
@@ -113,7 +113,7 @@ export default function HeroSlider() {
 
         {/* Decorative badge */}
         <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2">
-          <div className="w-80 h-80 bg-[#4a7c59] rounded-full flex items-center justify-center shadow-2xl">
+          <div className="w-80 h-80 bg-[#EDE8D0] rounded-full flex items-center justify-center shadow-2xl">
             <div className="w-60 h-60 bg-[#3a6647] rounded-full flex items-center justify-center border-4 border-[#5a8c69]/50">
               <div className="text-center text-white">
                 <p className="text-5xl font-bold">33+</p>
@@ -127,13 +127,13 @@ export default function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#4a7c59] rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#EDE8D0] rounded-full flex items-center justify-center text-white transition-all duration-300"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#4a7c59] rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-[#EDE8D0] rounded-full flex items-center justify-center text-white transition-all duration-300"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
@@ -144,7 +144,7 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#4a7c59] w-8' : 'bg-white/50 hover:bg-white'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#EDE8D0] w-8' : 'bg-white/50 hover:bg-white'
               }`}
           />
         ))}

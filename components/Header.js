@@ -69,7 +69,7 @@ export default function Header() {
               </div>
               <div>
                 <h1 className="text-lg font-bold text-[#1a3a2a] leading-tight">RUDRA</h1>
-                <p className="text-xs text-[#4a7c59] font-medium">BRASS INDUSTRIES</p>
+                <p className="text-xs text-[#EDE8D0] font-medium">BRASS INDUSTRIES</p>
               </div>
             </Link>
 
@@ -84,18 +84,18 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center gap-1 text-[#1a3a2a] font-medium hover:text-[#4a7c59] transition-colors py-2"
+                    className="flex items-center gap-1 text-[#1a3a2a] font-medium hover:text-[#EDE8D0] transition-colors py-2"
                   >
                     {item.name}
                     {item.dropdown && <ChevronDown className="w-4 h-4" />}
                   </Link>
                   {item.dropdown && activeDropdown === item.name && (
-                    <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 min-w-[220px] border-t-2 border-[#4a7c59]">
+                    <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 min-w-[220px] border-t-2 border-[#EDE8D0]">
                       {item.dropdown.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-4 py-2 text-sm text-[#1a3a2a] hover:bg-[#f5f5f5] hover:text-[#4a7c59] transition-colors"
+                          className="block px-4 py-2 text-sm text-[#1a3a2a] hover:bg-[#f5f5f5] hover:text-[#EDE8D0] transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -109,7 +109,7 @@ export default function Header() {
             {/* CTA Button */}
             <Link
               href="/#contact"
-              className="hidden lg:block bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold hover:bg-[#4a7c59] transition-colors"
+              className="hidden lg:block bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold hover:bg-[#EDE8D0] transition-colors"
             >
               Get A Quote
             </Link>
@@ -132,7 +132,7 @@ export default function Header() {
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block py-3 text-[#1a3a2a] font-medium hover:text-[#4a7c59] border-b border-gray-100"
+                    className="block py-3 text-[#1a3a2a] font-medium hover:text-[#EDE8D0] border-b border-gray-100"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -143,7 +143,7 @@ export default function Header() {
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className="block py-2 text-sm text-gray-600 hover:text-[#4a7c59]"
+                          className="block py-2 text-sm text-gray-600 hover:text-[#EDE8D0]"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {subItem.name}
@@ -155,7 +155,7 @@ export default function Header() {
               ))}
               <Link
                 href="/#contact"
-                className="block mt-4 bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold text-center hover:bg-[#4a7c59] transition-colors"
+                className="block mt-4 bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold text-center hover:bg-[#EDE8D0] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get A Quote

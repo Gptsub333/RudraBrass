@@ -87,14 +87,14 @@ export default function ProductsContent() {
         />
         <div className="absolute inset-0 bg-[#1a3a2a]/80" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <p className="text-[#4a7c59] font-semibold text-sm uppercase tracking-widest mb-2">
+          <p className="text-[#EDE8D0] font-semibold text-sm uppercase tracking-widest mb-2">
             Rudra Brass Industries
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Products</h1>
           <div className="flex items-center gap-2 text-white/70 text-sm">
-            <Link href="/" className="hover:text-[#4a7c59] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#EDE8D0] transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#4a7c59]">Products</span>
+            <span className="text-[#EDE8D0]">Products</span>
           </div>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function ProductsContent() {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 bg-white text-[#1a3a2a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4a7c59] focus:border-transparent"
+                className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 bg-white text-[#1a3a2a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EDE8D0] focus:border-transparent"
               />
               {searchQuery && (
                 <button
@@ -150,13 +150,13 @@ export default function ProductsContent() {
                         }}
                         className={`w-full flex items-center justify-between px-5 py-3 text-sm font-medium transition-colors text-left ${
                           activeCategory === cat.name
-                            ? 'bg-[#4a7c59]/10 text-[#4a7c59] border-l-4 border-[#4a7c59]'
+                            ? 'bg-[#EDE8D0]/10 text-[#EDE8D0] border-l-4 border-[#EDE8D0]'
                             : 'text-[#1a3a2a] hover:bg-gray-50 border-l-4 border-transparent'
                         }`}
                       >
                         <span>{cat.name}</span>
                         <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
-                          activeCategory === cat.name ? 'bg-[#4a7c59] text-white' : 'bg-gray-100 text-gray-500'
+                          activeCategory === cat.name ? 'bg-[#EDE8D0] text-white' : 'bg-gray-100 text-gray-500'
                         }`}>
                           {count}
                         </span>
@@ -171,7 +171,7 @@ export default function ProductsContent() {
                   <p className="font-bold text-sm mb-3">Talk to our experts</p>
                   <a
                     href="tel:+919173684333"
-                    className="flex items-center justify-center gap-2 bg-[#4a7c59] text-white text-sm px-4 py-2 rounded font-semibold hover:bg-[#3a6647] transition-colors"
+                    className="flex items-center justify-center gap-2 bg-[#EDE8D0] text-white text-sm px-4 py-2 rounded font-semibold hover:bg-[#3a6647] transition-colors"
                   >
                     <Phone className="w-4 h-4" />
                     Call Now
@@ -185,7 +185,7 @@ export default function ProductsContent() {
               {/* Category Title */}
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-[#1a3a2a]">{activeCategory}</h2>
-                <div className="w-12 h-1 bg-[#4a7c59] mt-2" />
+                <div className="w-12 h-1 bg-[#EDE8D0] mt-2" />
               </div>
 
               {filtered.length === 0 ? (
@@ -193,7 +193,7 @@ export default function ProductsContent() {
                   <p className="text-gray-400 text-lg">No products found for &quot;{searchQuery}&quot;</p>
                   <button
                     onClick={() => { setSearchQuery(''); setActiveCategory('All') }}
-                    className="mt-4 text-[#4a7c59] underline text-sm"
+                    className="mt-4 text-[#EDE8D0] underline text-sm"
                   >
                     Clear filters
                   </button>
@@ -230,10 +230,10 @@ export default function ProductsContent() {
                         </span>
                       </div>
                       <div className="p-4">
-                        <h3 className="text-sm font-semibold text-[#1a3a2a] mb-3 line-clamp-2 group-hover:text-[#4a7c59] transition-colors leading-relaxed">
+                        <h3 className="text-sm font-semibold text-[#1a3a2a] mb-3 line-clamp-2 group-hover:text-[#EDE8D0] transition-colors leading-relaxed">
                           {product.name}
                         </h3>
-                        <button className="inline-flex items-center text-xs text-[#4a7c59] font-semibold hover:text-[#1a3a2a] transition-colors">
+                        <button className="inline-flex items-center text-xs text-[#EDE8D0] font-semibold hover:text-[#1a3a2a] transition-colors">
                           View Details
                           <ChevronRight className="w-3 h-3 ml-1" />
                         </button>
@@ -272,7 +272,7 @@ export default function ProductsContent() {
               </button>
             </div>
             <div className="p-6">
-              <span className="text-xs font-semibold text-[#4a7c59] uppercase tracking-wider">
+              <span className="text-xs font-semibold text-[#EDE8D0] uppercase tracking-wider">
                 {selectedProduct.category}
               </span>
               <h3 className="text-xl font-bold text-[#1a3a2a] mt-1 mb-3">{selectedProduct.name}</h3>
@@ -280,7 +280,7 @@ export default function ProductsContent() {
               <div className="flex gap-3">
                 <Link
                   href="/#contact"
-                  className="flex-1 bg-[#1a3a2a] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#4a7c59] transition-colors"
+                  className="flex-1 bg-[#1a3a2a] text-white text-sm font-semibold py-3 rounded-lg text-center hover:bg-[#EDE8D0] transition-colors"
                 >
                   Get a Quote
                 </Link>

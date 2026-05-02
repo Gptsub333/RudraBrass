@@ -60,11 +60,11 @@ export default function Products() {
 
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Our Products</p>
+          <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Our Products</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4 text-balance">
             Heavy-Duty Brass Cable Glands & Accessories
           </h2>
-          <div className="w-24 h-1 bg-[#4a7c59] mx-auto" />
+          <div className="w-24 h-1 bg-[#EDE8D0] mx-auto" />
         </div>
 
         {/* Category Cards */}
@@ -100,7 +100,7 @@ export default function Products() {
                   <div className="absolute inset-0 bg-[#1a3a2a]/30 group-hover:bg-[#1a3a2a]/10 transition-colors duration-300" />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-sm font-bold text-[#1a3a2a] mb-1 group-hover:text-[#4a7c59] transition-colors leading-snug">
+                  <h3 className="text-sm font-bold text-[#1a3a2a] mb-1 group-hover:text-[#EDE8D0] transition-colors leading-snug">
                     {product.category}
                   </h3>
                   <p className="text-xs text-gray-400">{count} products</p>
@@ -114,7 +114,7 @@ export default function Products() {
         <div className="text-center">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-10 py-4 rounded font-semibold hover:bg-[#4a7c59] transition-colors"
+            className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-10 py-4 rounded font-semibold hover:bg-[#EDE8D0] transition-colors"
           >
             View All Products
             <ChevronRight className="w-5 h-5" />

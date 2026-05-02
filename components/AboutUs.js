@@ -64,11 +64,11 @@ export default function AboutUs() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`${isVisible ? 'animate-fadeIn' : 'opacity-0'}`}>
-            <p className="text-[#4a7c59] font-semibold text-lg mb-2">Know About Us</p>
+            <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Know About Us</p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Who We Are
             </h2>
-            <div className="w-24 h-1 bg-[#4a7c59] mb-6" />
+            <div className="w-24 h-1 bg-[#EDE8D0] mb-6" />
             
             <p className="text-gray-300 mb-6 leading-relaxed">
               Rudra Brass Industries is a prominent manufacturer specializing in high-quality cable glands 
@@ -89,7 +89,7 @@ export default function AboutUs() {
                   key={index}
                   className="flex items-start gap-3 p-4 bg-white/5 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors"
                 >
-                  <div className="w-10 h-10 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export default function AboutUs() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 bg-[#4a7c59] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#EDE8D0] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
             >
               Read More
               <ChevronRight className="w-5 h-5" />
@@ -124,13 +124,13 @@ export default function AboutUs() {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-[#4a7c59] text-white p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-[#EDE8D0] text-white p-6 rounded-lg shadow-xl">
                 <p className="text-4xl font-bold">33+</p>
                 <p className="text-sm font-medium">Years of Excellence</p>
               </div>
               
               {/* Decorative Element */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-4 border-[#4a7c59] rounded-lg opacity-50" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 border-4 border-[#EDE8D0] rounded-lg opacity-50" />
             </div>
           </div>
         </div>

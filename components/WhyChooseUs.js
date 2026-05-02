@@ -91,11 +91,11 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Why Choose Us</p>
+          <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Why Choose Us</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             {"Why We're Your Best Choice"}
           </h2>
-          <div className="w-24 h-1 bg-[#4a7c59] mx-auto mb-6" />
+          <div className="w-24 h-1 bg-[#EDE8D0] mx-auto mb-6" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -120,7 +120,7 @@ export default function WhyChooseUs() {
                   key={index}
                   className="flex items-start gap-3 p-4 bg-[#f8f9fa] rounded-lg hover:bg-[#1a3a2a] hover:text-white group transition-all duration-300"
                 >
-                  <div className="w-10 h-10 bg-[#4a7c59] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#EDE8D0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <benefit.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
 
             <Link
               href="/why-choose-us"
-              className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-8 py-4 rounded font-semibold hover:bg-[#4a7c59] transition-colors mt-8"
+              className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-8 py-4 rounded font-semibold hover:bg-[#EDE8D0] transition-colors mt-8"
             >
               Read More
               <ChevronRight className="w-5 h-5" />
@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
               />
             </div>
             {/* Decorative Element */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-8 border-[#4a7c59] rounded-lg -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-8 border-[#EDE8D0] rounded-lg -z-10" />
           </div>
         </div>
 
@@ -161,7 +161,7 @@ export default function WhyChooseUs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-[#4a7c59] mb-2">
+                <p className="text-4xl md:text-5xl font-bold text-[#EDE8D0] mb-2">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="text-white font-medium">{stat.label}</p>

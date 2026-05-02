@@ -50,11 +50,11 @@ export default function Manufacturing() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#4a7c59] font-semibold text-lg mb-2">Technology Behind Our Production</p>
+          <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Technology Behind Our Production</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4">
             Manufacturing Process
           </h2>
-          <div className="w-24 h-1 bg-[#4a7c59] mx-auto" />
+          <div className="w-24 h-1 bg-[#EDE8D0] mx-auto" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -64,16 +64,16 @@ export default function Manufacturing() {
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* Animated Manufacturing Visual */}
                 <div className="relative">
-                  <div className="w-40 h-40 bg-[#4a7c59] rounded-full flex items-center justify-center">
+                  <div className="w-40 h-40 bg-[#EDE8D0] rounded-full flex items-center justify-center">
                     {(() => {
                       const IconComponent = processes[activeProcess].icon
                       return <IconComponent className="w-20 h-20 text-white" />
                     })()}
                   </div>
                   {/* Animated rings */}
-                  <div className="absolute inset-0 border-4 border-[#4a7c59]/30 rounded-full animate-ping" style={{ animationDuration: '2s' }} />
-                  <div className="absolute -inset-8 border-2 border-[#4a7c59]/20 rounded-full animate-spin" style={{ animationDuration: '10s' }} />
-                  <div className="absolute -inset-16 border border-[#4a7c59]/10 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
+                  <div className="absolute inset-0 border-4 border-[#EDE8D0]/30 rounded-full animate-ping" style={{ animationDuration: '2s' }} />
+                  <div className="absolute -inset-8 border-2 border-[#EDE8D0]/20 rounded-full animate-spin" style={{ animationDuration: '10s' }} />
+                  <div className="absolute -inset-16 border border-[#EDE8D0]/10 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
                 </div>
               </div>
               
@@ -98,7 +98,7 @@ export default function Manufacturing() {
                 }`}
               >
                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                  activeProcess === index ? 'bg-[#4a7c59]' : 'bg-[#f8f9fa]'
+                  activeProcess === index ? 'bg-[#EDE8D0]' : 'bg-[#f8f9fa]'
                 }`}>
                   <process.icon className={`w-6 h-6 ${
                     activeProcess === index ? 'text-white' : 'text-[#1a3a2a]'
