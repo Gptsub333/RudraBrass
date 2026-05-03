@@ -127,17 +127,17 @@ export default function WhyChooseUsPage() {
       <Header />
       <main>
         {/* Page Hero */}
-        <section className="relative bg-[#1e3a5f] py-20 overflow-hidden">
+        <section className="relative bg-[#1a3a2a] py-20 overflow-hidden">
           <div className="absolute inset-0 opacity-5" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }} />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl">
-              <p className="text-[#c9a227] font-semibold text-lg mb-2">Why Choose Us</p>
+              <p className="text-[#EDE8D0] font-semibold text-lg mb-2">Why Choose Us</p>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
                 The Rudra Advantage
               </h1>
-              <div className="w-24 h-1 bg-[#c9a227] mb-6" />
+              <div className="w-24 h-1 bg-[#EDE8D0] mb-6" />
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
                 For over 33 years, Rudra Brass Industries has been the trusted choice for procurement 
                 managers, engineers, and distributors worldwide. Here is why thousands of customers 
@@ -146,13 +146,13 @@ export default function WhyChooseUsPage() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/products"
-                  className="inline-flex items-center gap-2 bg-[#c9a227] text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-[#EDE8D0] text-gray-700 px-6 py-3 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
                 >
                   Explore Products <ChevronRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/#contact"
-                  className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+                  className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
                 >
                   Get a Quote <Phone className="w-4 h-4" />
                 </Link>
@@ -162,15 +162,15 @@ export default function WhyChooseUsPage() {
         </section>
 
         {/* Stats Bar */}
-        <section className="bg-[#c9a227] py-8">
+        <section className="bg-[#1a3a2a] py-8">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {stats.map((s, i) => (
                 <div key={i}>
-                  <p className="text-3xl font-bold text-white">
+                  <p className="text-3xl font-bold text-[#EDE8D0]">
                     <Counter target={s.value} />
                   </p>
-                  <p className="text-white/80 text-sm mt-1">{s.label}</p>
+                  <p className="text-gray-300 text-sm mt-1">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -181,11 +181,11 @@ export default function WhyChooseUsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-14">
-              <p className="text-[#c9a227] font-semibold text-lg mb-2">Our Strengths</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 text-balance">
+              <p className="text-[#1a3a2a] font-semibold text-lg mb-2">Our Strengths</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4 text-balance">
                 6 Reasons to Choose Rudra
               </h2>
-              <div className="w-24 h-1 bg-[#c9a227] mx-auto" />
+              <div className="w-24 h-1 bg-[#1a3a2a] mx-auto" />
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {benefits.map((b, i) => (
@@ -193,15 +193,15 @@ export default function WhyChooseUsPage() {
                   key={i}
                   className="border border-gray-100 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
-                  <div className="w-14 h-14 bg-[#1e3a5f] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#c9a227] transition-colors">
-                    <b.icon className="w-7 h-7 text-white" />
+                  <div className="w-14 h-14 bg-[#1a3a2a] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#EDE8D0] transition-colors">
+                    <b.icon className="w-7 h-7 text-white group-hover:text-gray-700" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">{b.title}</h3>
+                  <h3 className="text-xl font-bold text-[#1a3a2a] mb-3">{b.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-5 text-sm">{b.description}</p>
                   <ul className="space-y-2">
                     {b.points.map((pt, j) => (
                       <li key={j} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle className="w-4 h-4 text-[#c9a227] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#1a3a2a] flex-shrink-0" />
                         {pt}
                       </li>
                     ))}
@@ -216,16 +216,16 @@ export default function WhyChooseUsPage() {
         <section className="py-20 bg-[#f8f9fa]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <p className="text-[#c9a227] font-semibold text-lg mb-2">The Comparison</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 text-balance">
+              <p className="text-[#1a3a2a] font-semibold text-lg mb-2">The Comparison</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4 text-balance">
                 Rudra vs. Other Suppliers
               </h2>
-              <div className="w-24 h-1 bg-[#c9a227] mx-auto" />
+              <div className="w-24 h-1 bg-[#1a3a2a] mx-auto" />
             </div>
             <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="grid grid-cols-3 bg-[#1e3a5f] text-white">
+              <div className="grid grid-cols-3 bg-[#1a3a2a] text-white">
                 <div className="p-4 font-semibold">Feature</div>
-                <div className="p-4 font-semibold text-center text-[#c9a227]">Rudra Brass</div>
+                <div className="p-4 font-semibold text-center text-[#EDE8D0]">Rudra Brass</div>
                 <div className="p-4 font-semibold text-center text-gray-400">Others</div>
               </div>
               {comparisons.map((row, i) => (
@@ -236,7 +236,7 @@ export default function WhyChooseUsPage() {
                   <div className="p-4 text-gray-700 text-sm">{row.feature}</div>
                   <div className="p-4 text-center">
                     {row.us
-                      ? <CheckCircle className="w-5 h-5 text-[#c9a227] mx-auto" />
+                      ? <CheckCircle className="w-5 h-5 text-[#1a3a2a] mx-auto" />
                       : <span className="text-gray-300 text-xl font-bold">—</span>}
                   </div>
                   <div className="p-4 text-center">
@@ -254,27 +254,27 @@ export default function WhyChooseUsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <p className="text-[#c9a227] font-semibold text-lg mb-2">Client Feedback</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 text-balance">
+              <p className="text-[#1a3a2a] font-semibold text-lg mb-2">Client Feedback</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a2a] mb-4 text-balance">
                 What Our Customers Say
               </h2>
-              <div className="w-24 h-1 bg-[#c9a227] mx-auto" />
+              <div className="w-24 h-1 bg-[#1a3a2a] mx-auto" />
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {testimonials.map((t, i) => (
                 <div key={i} className="bg-[#f8f9fa] rounded-2xl p-8 hover:shadow-lg transition-shadow">
                   <div className="flex gap-1 mb-4">
                     {Array.from({ length: t.rating }).map((_, j) => (
-                      <Star key={j} className="w-4 h-4 text-[#c9a227] fill-[#c9a227]" />
+                      <Star key={j} className="w-4 h-4 text-[#1a3a2a] fill-[#1a3a2a]" />
                     ))}
                   </div>
                   <p className="text-gray-600 leading-relaxed mb-6 italic text-sm">{`"${t.review}"`}</p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-[#1e3a5f] flex items-center justify-center text-white font-bold">
+                    <div className="w-10 h-10 rounded-full bg-[#1a3a2a] flex items-center justify-center text-white font-bold">
                       {t.name[0]}
                     </div>
                     <div>
-                      <p className="font-semibold text-[#1e3a5f] text-sm">{t.name}</p>
+                      <p className="font-semibold text-[#1a3a2a] text-sm">{t.name}</p>
                       <p className="text-gray-500 text-xs">{t.company}</p>
                     </div>
                   </div>
@@ -285,7 +285,7 @@ export default function WhyChooseUsPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-[#1e3a5f]">
+        <section className="py-20 bg-[#1a3a2a]">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">
               Experience the Rudra Difference Today
@@ -297,13 +297,13 @@ export default function WhyChooseUsPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/products"
-                className="inline-flex items-center gap-2 bg-[#c9a227] text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-[#EDE8D0] text-gray-700 px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
               >
                 Browse Products <ChevronRight className="w-5 h-5" />
               </Link>
               <a
                 href="mailto:info@rudrabrassindustries.com"
-                className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300"
+                className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#1a3a2a] transition-all duration-300"
               >
                 Send Enquiry <Mail className="w-5 h-5" />
               </a>
